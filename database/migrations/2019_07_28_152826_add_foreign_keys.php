@@ -22,6 +22,7 @@ class AddForeignKeys extends Migration
 
         Schema::table('value_additional_fields', function (Blueprint $table) {
             $table->foreign('event_id')->references('id')->on('events');
+            $table->foreign('additional_field_id')->references('id')->on('additional_fields');
         });
         Schema::table('events', function (Blueprint $table) {
             $table->foreign('product_id')->references('id')->on('products');

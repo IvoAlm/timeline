@@ -16,6 +16,7 @@ class CreateValueAdditionalFieldsTable extends Migration
         Schema::create('value_additional_fields', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('event_id')->unsigned();
+            $table->bigInteger('additional_field_id')->unsigned();
             $table->string('data');
             $table->string('type_data');
             $table->timestamps();
