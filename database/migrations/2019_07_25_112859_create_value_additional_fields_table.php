@@ -18,7 +18,6 @@ class CreateValueAdditionalFieldsTable extends Migration
             $table->bigInteger('event_id')->unsigned();
             $table->string('data');
             $table->string('type_data');
-            $table->string('size');
             $table->timestamps();
         });
     }
