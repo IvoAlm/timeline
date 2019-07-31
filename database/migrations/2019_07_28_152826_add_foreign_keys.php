@@ -28,7 +28,7 @@ class AddForeignKeys extends Migration
             $table->foreign('event_type_id')->references('id')->on('event_types');
         });
         Schema::table('event_type_additional_fields', function (Blueprint $table) {
-            $table->foreign('type_event_id')->references('id')->on('event_types');
+            $table->foreign('event_type_id')->references('id')->on('event_types');
             $table->foreign('additional_field_id')->references('id')->on('additional_fields');
         });
 
