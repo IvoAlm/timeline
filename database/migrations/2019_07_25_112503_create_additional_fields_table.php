@@ -16,6 +16,10 @@ class CreateAdditionalFieldsTable extends Migration
         Schema::create('additional_fields', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('type');
+            $table->string('required_field');
+            $table->string('input_name');
+            $table->string('input_label');
             $table->timestamps();
         });
     }
