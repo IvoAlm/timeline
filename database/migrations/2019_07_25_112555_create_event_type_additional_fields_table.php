@@ -15,7 +15,7 @@ class CreateEventTypeAdditionalFieldsTable extends Migration
     {
         Schema::create('event_type_additional_fields', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('type_event_id')->unsigned();
+            $table->bigInteger('event_type_id')->unsigned();
             $table->bigInteger('additional_field_id')->unsigned();
 
         });
