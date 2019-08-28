@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    public function eventType(){
+    public function type(){
         return $this->belongsTo('App/EventType');
     }
-    public function valueAdditionalFields(){
+    public function value(){
         return $this->hasMany('App/ValueAdditionalField');
     }
     public function product(){

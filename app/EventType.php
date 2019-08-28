@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class EventType extends Model
 {
-    public function events(){
+    public function event(){
         return $this->hasMany('App/Event');
     }
-    public function eventTypeAdditionalField(){
+    public function type(){
         return $this->hasMany('App/EventTypeAdditionalField');
     }
 }

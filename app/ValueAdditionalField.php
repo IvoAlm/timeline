@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ValueAdditionalField extends Model
 {
-    public function additionalField(){
+    public function field(){
         return $this->belongsTo('App/AdditionalField');
     }
     public function event(){
